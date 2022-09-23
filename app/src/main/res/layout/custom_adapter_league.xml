@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/league_venue" />
+
+    <ImageView
+        android:id="@+id/league_homeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/league_awayLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/league_homeLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/league_homeLogo"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="23dp"
+        android:layout_height="17dp"
+        android:text="VS."
+        android:textSize="15dp"
+
+        android:fontFamily="sans-serif-condensed"
+
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/league_homeLogo"
+        app:layout_constraintEnd_toStartOf="@+id/league_awayLogo"
+        app:layout_constraintStart_toEndOf="@+id/league_homeLogo"
+        app:layout_constraintTop_toTopOf="@+id/league_awayLogo" />
+
+    <TextView
+        android:id="@+id/league_homeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/league_homeLogo"
+        app:layout_constraintEnd_toEndOf="@+id/league_homeLogo"
+        app:layout_constraintStart_toStartOf="@+id/league_homeLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/league_awayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/league_awayLogo"
+        app:layout_constraintEnd_toEndOf="@+id/league_awayLogo"
+        app:layout_constraintStart_toStartOf="@+id/league_awayLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/league_homeScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/league_homeLogo"
+        app:layout_constraintEnd_toStartOf="@+id/league_homeLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/league_homeLogo"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/league_awayScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/league_awayLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/league_awayLogo"
+        app:layout_constraintTop_toTopOf="@+id/league_awayLogo"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/league_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/league_awayScore"
+        app:layout_constraintStart_toEndOf="@+id/league_homeScore"
+        app:layout_constraintTop_toBottomOf="@+id/league_homeLogo"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/league_venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/league_date"
+        app:layout_constraintStart_toStartOf="@+id/league_date"
+        app:layout_constraintTop_toBottomOf="@+id/league_date"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
